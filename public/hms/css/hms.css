@@ -1,0 +1,22 @@
+.theme-bg-color {
+    background: #ff3c8d;
+}
+.theme-color {
+    color: #ff3c8d;
+}
+.navbar-nav a.nav-link {
+    transition-duration: 0.2s;
+    font-size: 15px !important;
+}
+.navbar-nav a.nav-link:hover {
+    font-weight: 600;
+    font-size: 16px !important;
+}
+#forms form input, #search_reg input {
+    /* display: block !important; */
+    width: calc(100% - 0px) !important;
+    padding: 10px 12px !important;
+    margin: 2px auto !important;
+    border-radius: 4px !important;
+    border: 1px solid #dadada !important;
+}

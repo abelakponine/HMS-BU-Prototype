@@ -1,0 +1,171 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+.ml-auto {
+    margin-left: auto;
+}
+.mr-auto {
+    margin-right: auto;
+}
+.m-auto {
+    margin: auto;
+}
+.my-auto {
+    margin: auto 0 !important;
+}
+.mx-auto {
+    margin: 0 auto !important;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.full-width {
+    width: 100%;
+}
+.full-height {
+    height: 100%;
+}
+.absolute-center {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.absolute-y-center {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.absolute-x-center {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+.bottom {
+    bottom: 0;
+}
+.left {
+    left: 0;
+}
+.vertical-align-top {
+    vertical-align: top;
+}
+.vertical-align-middle {
+    vertical-align: middle;
+}
+.vertical-align-bottom {
+    vertical-align: bottom;
+}
+.shadow {
+    box-shadow: 0 0 10px 5px #000000b5 !important;
+}
+.no-shadow {
+    box-shadow: none !important;
+}
+.overflow-y-auto {
+    overflow-y: auto;
+}
+.overflow-x-auto {
+    overflow-x: auto;
+}
+.overflow-y-hide {
+    overflow-y: hidden;
+}
+.overflow-x-hide {
+    overflow-x: hidden;
+}
+.overflow-hide {
+    overflow: hidden;
+}
+.no-bg {
+    background: none !important;
+}
+.scrollbar-thin {
+    scrollbar-width: thin;
+}
+.overlayer {
+    background: #00000082;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+}
+.d-hide, .d-none {
+    display: none;
+}
+.animate-loader {
+    animation-name: loader-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* .marquee {
+    width: 450px;
+    line-height: 50px;
+    background-color: red;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+} */
+.marquee {
+    animation-name: marquee;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes marquee {
+    0%   { left: 0}
+    100% { left: -25% }
+}
+@-webkit-keyframes marquee {
+    0%   { left: 0}
+    100% { left: -25% }
+}
+
+@keyframes loader-animation {
+    0% {
+        transform: scale(1) translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+    40% {
+        transform: scale(0.6) translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        opacity: 0.6;
+    }
+    to {
+        transform: scale(1) translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+}
+@-webkit-keyframes loader-animation {
+    0% {
+        transform: scale(1) translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+    40% {
+        transform: scale(0.6) translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        opacity: 0.6;
+    }
+    to {
+        transform: scale(1) translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+}

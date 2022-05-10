@@ -1,0 +1,188 @@
+* {
+    font-weight: normal;
+}
+.jumbotron, section:nth-of-type(1) {
+    height: 100%;
+}
+#upcoming-event ul {
+    display: block;
+    padding: 0;
+}
+#upcoming-event li {
+    list-style: square;
+    list-style-position: inside;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu .option {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 150px;
+    max-width: calc((100% / 3) - 24px);
+    width: calc((100% / 3) - 24px);
+    min-height: 100px;
+    text-align: center;
+    padding: 8px;
+    margin: 8px 12px;
+    border: 1px solid #dfdfdf;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.menu .option h5 {
+    font-size: 22px;
+    white-space: nowrap;
+}
+.menu .option span {
+    display: block;
+    font-size: 14px;
+    color: #000000 !important;
+    font-weight: normal;
+    font-family: Arial !important;
+}
+menu li:nth-of-type(1) {
+    margin-top: 20px;
+    border-top: 1px solid #282828;
+}
+menu li {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 2px 0;
+    border-bottom: 1px solid #282828;
+    font-size: 15px !important;
+    color: #adadad;
+    position: relative;
+    cursor: pointer;
+}
+menu li:hover, menu li:focus, menu li:active, menu li.active {
+    background: #282828 !important;
+    color: #ff55b9;
+}
+menu li i {
+    width: 15px !important;
+    color: #adadad;
+}
+menu li.active::before {
+    content: '';
+    border: 6px solid transparent;
+    border-color: transparent transparent transparent #ac186f;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+    border-radius: 50%;
+}
+#side-bar {
+    height: 100% !important;
+    border-bottom: 20px solid #353535 !important;
+    overflow: hidden;
+    overflow-y: auto;
+}
+#radar-container span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition-duration: 0s;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+}
+#appointment-form table input, #appointment-form table textarea {
+    width: 250px !important;
+}
+#emergency-form table select, #emergency-form table input, #emergency-form table textarea {
+    width: 250px !important;
+}
+
+#my-health-record table th {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+#my-health-record table td {
+    padding: 5px 10px;
+}
+#my-health-record table tr {
+    border-bottom: 1px solid #e5e5e5;
+}
+#my-health-record table th {
+    width: 200px;
+}
+#my-health-record table tbody {
+    display: block;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+}
+.chat {
+    border-bottom: 1px solid #f9f9f9;
+    font-size: 12px;
+    cursor: pointer;
+}
+.chat button {
+    font-size: 14px;
+}
+.msg-from {
+    background: #4a4a4a !important;
+    color: #f8f9fa !important;
+    max-width: 280px;
+    margin: 6px 0;
+    position: relative;
+}
+.msg-to {
+    background: #e6146b !important;
+    color: white !important;
+    align-self: flex-end;
+    max-width: 280px;
+    margin: 6px 0;
+    position: relative;
+}
+.msg-from::before {
+    content: '';
+    border: 15px solid transparent;
+    border-right-color: #4a4a4a;
+    position: absolute;
+    left: -25px;
+    top: 0;
+    transform: skewY(50deg);
+}
+.msg-to::after {
+    content: '';
+    border: 15px solid transparent;
+    border-left-color: #e6146b;
+    position: absolute;
+    right: -25px;
+    top: 0;
+    transform: skewY(-50deg);
+}
+#TND table tr:not(#TND table tr:nth-of-type(1)) {
+    border-bottom: 1px solid #f9f9f9;
+}
+#TND table th {
+    padding: 6px;
+    max-width: 140px;
+}
+#TND table td {
+    padding: 6px;
+    vertical-align: top;
+}
+#medications table tr:not(#TND table tr:nth-of-type(1)) {
+    border-bottom: 1px solid #f9f9f9;
+}
+#medications table th {
+    padding: 6px;
+    max-width: 100px;
+    vertical-align: top;
+}
+#medications table td {
+    padding: 6px;
+    vertical-align: top;
+}
+#medications table tr td:nth-of-type(1) {
+    max-width: 100px;
+}
+#chat-container .chat:hover {
+    background: #f6f6f6 !important;
+    border-radius: 6px;
+}

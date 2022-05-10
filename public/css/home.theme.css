@@ -1,0 +1,60 @@
+/* Light mode */
+
+@media all and (max-width: 959px) {
+    .light-mode, .light-mode #feedcol {
+        background: #f0f0f0 !important;
+    }
+    .light-mode #mStory {
+        background: white !important;
+        border-bottom-color: #f9f9f9 !important;
+    }
+    .light-mode .feed, .light-mode .author-info {
+        background: white !important;
+    }
+    .light-mode .author-info > button, .light-mode .author-info > button > svg > g {
+        color: #1b1b1b !important;
+        fill: #1b1b1b
+    }
+    .light-mode #feedcol::-webkit-scrollbar {
+        width: 6px;
+    }
+    .light-mode #feedcol::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .light-mode #feedcol::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+    
+    .light-mode .feed .author-info, .light-mode .feed .caption {
+        background: white !important;
+    }
+    .light-mode .feed .author-info h1 {
+        color: #202020 !important;
+    }
+    .light-mode .feed > .media, .light-mode .feed > .fullscreen > .media {
+        background: #ffffff02 !important;
+    }
+    .light-mode .feed .caption > div {
+        color: #202020 !important;
+    }
+    .light-mode .feed .caption .actions .btn {
+        color: #4a4a4a !important;
+    }
+    .light-mode .feed .caption .theme-color {
+        color: #e13268 !important;
+    }
+    .light-mode #navigator {
+        box-shadow: 0 0 10px 0 #0000001c !important;
+    }
+    .light-mode #navigator button {
+        background: white !important;
+        color: #464646;
+    }
+
+    .light-mode #mStory > div > div > div > h1 {
+        color: #202020 !important;
+    }
+    .light-mode .fullscreen {
+        background: white !important;
+    }
+}

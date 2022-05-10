@@ -1,0 +1,150 @@
+@media all and (min-width:1199px){
+    #navigator {
+        display: none !important;
+    }
+    #inbox, #profile {
+        display: block !important;
+    }
+}
+@media all and (max-width:1198px){
+    #inbox {
+        display: none;
+        min-width: 100%;
+        position: absolute;
+        z-index: 100;
+    }
+    #cibtn, #sibtn {
+        display: block !important;
+    }
+    #cmbtn {
+        right: 65px !important;
+    }
+    #profile {
+        width: 40%;
+        min-width: 453px;
+        flex: unset;
+        max-width: unset;
+    }
+    #feeds {
+        width: calc(100% - 453px);
+        flex: unset;
+        max-width: unset;
+    }
+}
+
+@media all and (max-width:900px){
+    #feeds {
+        min-width: unset;
+    }
+}
+@media all and (min-width:846px){
+    #profile {
+        display: block !important;
+    }
+}
+@media all and (max-width:845px){
+    #profile {
+        display: none;
+    }
+    #feeds {
+        width: 100%;
+    }
+    #navigator {
+        display: flex !important;
+        background: #151515 !important;
+        height: max-content;
+        bottom: 0;
+        z-index: 120;
+    }
+    #navigator button {
+        background: none;
+        width: 100%;
+        padding: 8px 0;
+        height: max-content;
+        color: #909090;
+        border: 0;
+    }
+    #navigator button small {
+        font-size: 10px;
+        margin: 0px;
+    }
+    #profile, #inbox {
+        display: none;
+        width: 100%;
+        min-width: 100%;
+        position: absolute;
+        z-index: 80;
+    }
+    #profile-head {
+        padding-top: .5rem !important;
+    }
+    #edit-profile-image {
+        width: 100% !important;
+    }
+    #cnp-float {
+        display: none !important;
+    }
+    #clp-mobile {
+        display: block !important;
+    }
+    table tr {
+        display: inline-flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    table td, table input[type="text"], table textarea {
+        width: 100% !important;
+        margin-top: 2px !important;
+        margin-bottom: 6px !important;
+    }
+}
+
+@media all and (max-width: 810px){
+    nav ul > li {
+        display: none !important;
+    }
+    .mbtn {
+        display: flex !important;
+    }
+    .npBtn {
+        background: #202020 !important;
+        margin: auto 40px auto 10px !important;
+        border: 0 !important;
+    }
+    .reaction {
+        top: 40% !important;
+        transform: translateY(-50%) !important;
+    }
+    .nav2 > ul {
+        min-width: min-content !important;
+        display: flex;
+        flex-direction: row;
+        margin-top: 6px;
+    }
+}
+@media all and (max-width: 500px){
+    #feeds {
+        min-width: unset !important;
+    }
+}
+@media all and (max-width: 450px){
+    #gallery .gl-item {
+        margin: 4px 1.8px;
+    }
+}
+
+@media all and (max-height:560px){
+    .reaction {
+        display: none !important;
+    }
+    .reaction-mobile {
+        display: flex !important;
+        flex-direction: column !important;
+        top: calc(10% + 30px) !important;
+    }
+}
+@media all and (max-height:430px){
+    .r-avatar {
+        display: none !important;
+    }
+}

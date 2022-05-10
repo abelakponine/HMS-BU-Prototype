@@ -1,0 +1,181 @@
+html {
+    height: 100%;
+}
+body {
+    /* background: #000000; */
+    /* max-width: 1707px !important; */
+    min-height: 100%;
+    margin: 0 auto;
+}
+nav {
+    background: linear-gradient(to right, #303030 10%, #ff0658 110%);
+}
+nav > li:nth-of-type(1) {
+    margin-left: -28px !important;
+}
+.theme-color {
+    color: #ff0658 !important;
+}
+.theme-color-bg {
+    background: #ff0658 !important;
+}
+.theme-bg-style {
+    background: linear-gradient(to right, #303030 10%, #ff0658 110%);
+}
+.navbar-brand, .navbar-nav a.nav-link {
+    color: white !important;
+}
+.navbar-nav a.nav-link {
+    font-size: 16px !important;
+    transition-duration: 0.2s;
+}
+.navbar-nav a.nav-link:hover {
+    font-weight: 600;
+}
+form#login input {
+    border: 2px solid silver;
+    outline: none;
+}
+form#login input:focus {
+    box-shadow: 0 0 0 .2rem pink;
+}
+form#login button:nth-of-type(1), form#registration button {
+    background: linear-gradient(to right, #303030 10%, #ff0658 80%);
+    color: white;
+}
+form#login button:nth-of-type(2) {
+    background: #0062cc !important;
+    color: white;
+}
+form input {
+    /* background: white !important; */
+}
+footer {
+    background: #202020 !important;
+}
+.carousel-item {
+    box-shadow: 0 0 0 10px silver;
+}
+.carousel-caption {
+    background: #00000045;
+    border-radius: 10px;
+}
+.carousel-caption h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.carousel-caption p {
+    display: none;
+}
+footer > div > span {
+    background: #101010;
+    width: 25px;
+    height: 25px;
+    padding: 4px 10px;
+    margin: 0 20px;
+    border-radius: 26px;
+    font-size: 1.4rem;
+}
+#container {
+    flex-wrap: nowrap;
+}
+#profile {
+    min-width: 453px;
+}
+#feeds {
+    min-width: 452px;
+    flex: unset;
+}
+#navigator {
+    width: 100%;
+    height: 40px;
+    left: 0;
+}
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery .gl-item {
+    display: inline-flex;
+    background: #202020;
+    position: relative;
+    width: calc(100% / 3.1);
+    max-width: 130px;
+    /* min-width: 130px; */
+    height: 130px;
+    vertical-align: top;
+    margin: 4px;
+    overflow-y: hidden;
+    border-radius: 2px;
+}
+#gallery .gl-item img {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.caption {
+    background: linear-gradient(to top, #161616 15%, #00000082 100%); /* #191919; #00000082; */
+    width: 100%;
+    min-height: 60px;
+    font-size: 15px;
+    color: white;
+}
+.fa-heart.liked {
+    color: red !important;
+}
+.reaction, .reaction-mobile {
+    height: max-content !important;
+}
+.reaction button {
+    display: block;
+    margin: 2px auto;
+    padding: 4px 0;
+}
+.reaction button i, .reaction button b {
+    color: #f8f8f8;
+}
+.reaction img, .reaction-mobile img {
+    display: block;
+}
+#feeds, .feed {
+    background: #1c1c1c !important; /*#141414 !important;*/
+}
+.feed {
+    border-bottom: 2px solid #151515;
+}
+#regForm {
+    width: max-content;
+    height: 90%;
+    max-height: 900px;
+    margin: auto;
+    border-radius: 6px;
+    border-top: 10px solid white;
+    border-bottom: 40px solid white;
+}
+#dialog {
+    width: 400px;
+    min-height: 150px;
+    padding: 20px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 14px;
+    font-size: 16px;
+    box-shadow: 0 0 6px 0 #00000062;
+}
+.mobile-nav {
+    background: linear-gradient(to right, #303030 10%, #ff0658 110%) !important;
+    position: absolute;
+    z-index: 50;
+}
+.mobile-nav li {
+    display: block;
+}
+.mobile-nav li a {
+    color: white;
+    padding: 6px 20px !important;
+}
+.mobile-nav li a:hover, .mobile-nav li a:active {
+    background: #24181c2b;
+}
